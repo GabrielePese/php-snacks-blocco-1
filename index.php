@@ -12,29 +12,23 @@ $casa = ['Squadra di Casa', 'Squadra Ospite'];
 
 for ($i=0; $i < count($squadre)  ; $i++) { 
     $elem = $squadre[$i];
-    echo $elem.'<br>';
-
-    for ($y=0; $y < count($risultati)  ; $y++) { 
-        $ris = $risultati[$y];
-        echo $ris.'<br>';
-    }
+    $ris = $risultati[$i];
+   
+    echo $elem. ' | '.$ris;
+    echo '<br>';
 }
+
 echo '<br>';
-
-
-
-
-
-
-// var_dump ($risultati);
-// echo '<br>';
-
-// echo $squadre[0].' '.' - '.$squadre[1].' '.$risultati[0];
-// echo '<br>';
-// echo $casa[0];
 
 // Snack 2
 // Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. Se tutto è ok stampare "Accesso riuscito", altrimenti "Accesso negato"
+
+$name = $_GET['name'];
+$mail = $_GET['mail'];
+$age = $_GET['age'];
+
+
+
 
 // Snack 4
 // Creare un array con 15 numeri casuali, tenendo conto che l'array non dovrà contenere lo stesso numero più di una volta
